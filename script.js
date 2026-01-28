@@ -15,9 +15,9 @@ const contactForm = document.getElementById('contact-form');
 // Current image index for lightbox
 let currentImageIndex = 0;
 const galleryImages = [
-    'https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1597239450996-ea7c2c564412?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    'images/projects.jpg',
+    'images/anime.jpg',
+    'images/health.jpg',
     'https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
     'https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'
@@ -148,12 +148,12 @@ contactForm.addEventListener('submit', (e) => {
 });
 
 // Download resume button
-document.querySelectorAll('.btn-download').forEach(button => {
-    button.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert('Downloading Resume...');
-    });
-});
+// document.querySelectorAll('.btn-download').forEach(button => {
+//     button.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         alert('Downloading Resume...');
+//     });
+// });
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
